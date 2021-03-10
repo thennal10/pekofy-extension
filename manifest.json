@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Pekofy",
+  "version": "0.1",
+
+  "description": "Pekofies everything",
+  "homepage_url": "https://github.com/thennal10/pekofy-extension",
+  "icons": {
+    "48": "icons/peko.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "all_frames": true,
+      "js": ["pekofy.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
